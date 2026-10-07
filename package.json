@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.6",
+    "ejs": "^7.0.1",
+    "express": "^5.2.1"
+  }
+}

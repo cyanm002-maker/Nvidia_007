@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card dashboard">
+
+        <h1>Dashboard</h1>
+
+        <p class="subtitle">
+            Welcome, <%= profile.name %>!
+        </p>
+
+
+        <div class="profile">
+
+
+            <div class="profile-row">
+
+                <span>Name</span>
+
+                <strong>
+                    <%= profile.name %>
+                </strong>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <span>Email</span>
+
+                <strong>
+                    <%= user.email %>
+                </strong>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <span>Age</span>
+
+                <strong>
+                    <%= profile.age %>
+                </strong>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <span>Birthday</span>
+
+                <strong>
+                    <%= profile.birthday %>
+                </strong>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <span>Sex</span>
+
+                <strong>
+                    <%= profile.sex %>
+                </strong>
+
+            </div>
+
+
+            <div class="profile-row">
+
+                <span>Country</span>
+
+                <strong>
+                    <%= profile.country %>
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <form action="/logout" method="POST">
+
+            <button
+                type="submit"
+                class="logout-button"
+            >
+                Logout
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
